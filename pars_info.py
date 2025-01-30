@@ -85,7 +85,7 @@ del region_positions['запорожская область']
 del region_positions['херсонская область']
 del region_positions['луганская народная республика']
 
-scale_factor = 1.38
+scale_factor = 1.75
 region_positions = {region: [x * scale_factor, y * scale_factor] for region, (x, y) in region_positions.items()}
 
 with open("result_tables/regions_positions.csv", mode="w", newline="", encoding="utf-8") as csvfile:
