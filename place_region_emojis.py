@@ -39,7 +39,7 @@ min_y, max_y = min(y_coords), max(y_coords)
 width, height = max_x - min_x, max_y - min_y
 
 output_file = "regions_emojis.svg"
-dwg = svgwrite.Drawing(output_file, profile="tiny", viewBox=f"{min_x} {min_y} {width} {height}")
+dwg = svgwrite.Drawing(output_file, profile="tiny", viewBox="-50 -50 1800 1100")
 
 for region, (x, y) in region_positions.items():
     emoji_path = os.path.join("region_emojis", f"{region}.svg")
